@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+
+        </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <table class="">
+            <thead class="">
+            <tr>
+                <th>Agency</th>
+                <th>State</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
+            </tr>
+            </thead>
+            <p>{{ test }}</p>
+            {% for item in departments %}
+            <tr>
+                <td>{{ item.agency_name }}</td>
+                <td>{{ item.state_name }}</td>
+                <td>{{ item.latitude }}</td>
+                <td>{{ item.longitude }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <button><a href="{% url 'crimes:add_department' %}">Add Event</a></button>
+       
+        
+        <script src="" async defer></script>
+    </body>
+</html>
